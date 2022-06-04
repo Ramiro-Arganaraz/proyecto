@@ -24,10 +24,17 @@ function  productos(){
     }
     total=subtotal
     alert("el valor a pagar es:"+total)
-
+    let nuevo=prompt("desea realizar otra compra?")
+    if((nuevo==="si")||(nuevo==="SI")||(nuevo==="Si")){
+        productos()
+    }
+    else
+    {
+        alert("Gracias por comprar con nosotros!!")
+    }
 }
 function Cuotas(){
-cuota = prompt("dividir en cuotas(3,6,9 o 12 en caso de no poner 0): ")
+cuota = prompt("dividir en cuotas(1,3,6,9 o 12): ")
     while (isNaN(cuota)) {
         cuota = prompt("no valido ingrese nuevamente: ")     
     }
@@ -59,7 +66,8 @@ cuota = prompt("dividir en cuotas(3,6,9 o 12 en caso de no poner 0): ")
             console.log(12);
                 break;    
         default:
-            console.log("mal");
+            console.log("Numero no valido ingrese entre 3 6 9 o 12");
+            Cuotas();
             break;
     }
     return subtotal;
@@ -69,22 +77,30 @@ function Descuentos(){
     let bajarprecio=prompt("Poner Descuento?")
     if((bajarprecio==="si")||(bajarprecio==="SI")||(bajarprecio==="Si")){
     dto=prompt("ingrese el porcentaje de descuento \n si el descuento es mayor a 15 se solicita clave")
-    if(dto>=15)
+    if(dto<15)
     {
-        let clave=prompt("ingrese la clave de Autorizacion")
+        dto=subtotal * dto / 100
+        alert("el descuento es de: "+ dto)
+        subtotal = subtotal - dto
+        alert("con el descuento te queda en:" + subtotal)
+        return subtotal   
+    }
+    else if (dto>=15) {
+        let clave = prompt("ingrese la clave de Autorizacion")
         if (clave!="1234") 
         {
-            alert("clave Incorrecta")
-            dto=0
-            Descuentos()
+            alert("clave Incorrecta");
+            Descuentos();
         }
-
+        else
+        {
+        dto=subtotal * dto / 100
+        alert("el descuento es de: "+ dto)
+        subtotal = subtotal - dto
+        alert("con el descuento te queda en:" + subtotal)
+        return subtotal        
+        }
     }
-    dto=subtotal * dto / 100
-    alert("el descuento es de: "+ dto)
-    subtotal = subtotal - dto
-    alert("con el descuento te queda en:" + subtotal)
-    return subtotal
 }
 }
 
