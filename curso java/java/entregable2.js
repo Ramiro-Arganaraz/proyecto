@@ -12,20 +12,20 @@ function  productos(){
         pieza = prompt("ingrese el numero de pieza")
         precio = prompt("ingrese el precio")
 
-        sigue = prompt("desea agregar otro producto")
         listadopiezas = listadopiezas +"\n"+pieza +"  "+precio
         subtotal = parseFloat(subtotal) + parseFloat(precio)
+        sigue = prompt("desea agregar otro producto")
     }
     alert("los productos seleccionados y su precio son:\n" + listadopiezas +"\nEl costo final es: "+subtotal)
     Descuentos() 
-    let pregunta=prompt("desea dividir en cuotas?")
-    if ((pregunta==="si")||(pregunta==="SI")||(pregunta==="Si")) {
+    let pregunta=(prompt("desea dividir en cuotas?")).toLowerCase()
+    if (pregunta==="si") {
         Cuotas()
     }
     total=subtotal
     alert("el valor a pagar es:"+total)
-    let nuevo=prompt("desea realizar otra compra?")
-    if((nuevo==="si")||(nuevo==="SI")||(nuevo==="Si")){
+    let nuevo=(prompt("desea realizar otra compra?")).toLowerCase()
+    if(nuevo==="si"){
         productos()
     }
     else
@@ -74,8 +74,8 @@ cuota = prompt("dividir en cuotas(1,3,6,9 o 12): ")
 
 }
 function Descuentos(){
-    let bajarprecio=prompt("Poner Descuento?")
-    if((bajarprecio==="si")||(bajarprecio==="SI")||(bajarprecio==="Si")){
+    let bajarprecio=(prompt("Poner Descuento?")).toLowerCase()
+    if(bajarprecio==="si"){
     dto=prompt("ingrese el porcentaje de descuento \n si el descuento es mayor a 15 se solicita clave")
     if(dto<15)
     {
