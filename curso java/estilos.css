@@ -1,0 +1,15 @@
+.hora{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+#verTodo h2{
+ width: 100px;
+ height: 100px;
+ background-color: black;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border-radius: 15px ;
+ margin: 15px;   
+}
