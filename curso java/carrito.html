@@ -5,17 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <style>
+#tabla
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tabla td, #tabla th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tabla tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tabla tr:hover {background-color: #ddd;}
+  
+  #tabla thead {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #150b35;
+    color: white;
+  }
+#form
+  {
+  border-radius: 5px;
+  background-color: #5f6a8f;
+  padding: 20px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#borrarcarrito{
+    border-radius: 5px;
+  background-color: #2fac35;
+  padding: 5px;
+}
+div#opciones{
+    align-items: center;
+    direction: rtl;
+
+}
+#volver
+{
+    text-align: center;
+    border-radius: 5px;
+  background-color: #2fac35;
+  padding: 5px;
+}
+P{
+text-align-last: center;
+}
+    </style>
 </head>
 <body>
-    <main>
-        <section>
-            <div id="carritoproducto">
-                <div id="listacarrito">
-                    
-                </div>
-            </div>
-        </section>
-    </main>
+    <div id="carrito">
+        
+
+    </div>
+    <div id="form"></div>
+
+
+    
+    <script src="./java/productos.js"></script>
     <script src="/curso java/java/carrito.js"></script>
 </body>
 </html>
