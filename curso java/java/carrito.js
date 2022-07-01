@@ -114,21 +114,30 @@ function terminarcompra(){
     let telefono=document.getElementById("telefono")
     let direccion=document.getElementById("direccion")
     
-    if (!Productocarrito.length) {
-        if ((nombre.value=null)&&(telefono.value=null)&&(direccion.value=null)) {
-            let usuario=new personas(nombre.value,telefono.value,direccion.value)
-            console.log(Productocarrito);
-            console.log(usuario);
+    if (!Productocarrito.length) 
+        {
+            alert("no hay productos en el carrito")
         }
         else
         {
-            alert("faltan datos")
+            if((nombre.value=null)&&(telefono.value=null)&&(direccion.value=null)) {
+                alert("faltan datos")
+            }
+            else
+            {
+                
+                let usuario=new personas(nombre.value,telefono.value,direccion.value)
+                console.log(Productocarrito);
+                console.log(usuario);
+                alert("compra realizada con exito")
+                localStorage.clear();
+                Productocarrito=[]
+                window.location=("curso1.html")
+            }
         }
-    }
-    else
-    {
-        alert("no hay productos en el carrito")
-    }
+    
+    
+    
 
 
 

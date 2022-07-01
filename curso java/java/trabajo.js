@@ -2,7 +2,7 @@ let cuota = 0
 let dto = 0
 let subtotal=0
 
-let vercarrito=document.getElementById("vercarrito")
+// let vercarrito=document.getElementById("vercarrito")
 let verTodo=document.getElementById("verTodo")
 
 mostrarProductos()    
@@ -43,6 +43,9 @@ mostrarProductos()
         });
     }
 
-vercarrito.onclick=()=>{
-    window.location=("carrito.html")
-}
+const contador=document.getElementById("carticon")
+contador.innerHTML=Productocarrito.lenght
+
+// vercarrito.onclick=()=>{
+//     window.location=("carrito.html")
+// }
