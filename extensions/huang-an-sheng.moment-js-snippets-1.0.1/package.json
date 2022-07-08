@@ -1,0 +1,48 @@
+{
+	"name": "moment-js-snippets",
+	"displayName": "Moment.js snippets",
+	"description": "Moment.js Visual studio code snippets extension.",
+	"version": "1.0.1",
+	"publisher": "huang-an-sheng",
+	"author": {
+		"name": "Huang An Sheng"
+	},
+	"keywords": [
+		"snippets",
+		"moment",
+		"moment.js"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/andy19910102/moment-js-snippets"
+	},
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.34.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript-snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html-snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "36965f38-819a-4492-a759-a41feab513a0",
+		"publisherId": "dd5c8b0d-37c8-4a8a-8abe-78fb4593b737",
+		"publisherDisplayName": "Huang An Sheng",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1657207792591
+	}
+}

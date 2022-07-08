@@ -18,6 +18,8 @@ const totalcompra=()=>{
 
 const cuerpo=document.getElementById("carrito")
 
+Productocarrito.length===0 && console.log("carrito vacio");
+
  if (!Productocarrito.length) {
     let alarmacarrito=`
     <div>
@@ -77,10 +79,31 @@ const cuerpo=document.getElementById("carrito")
     });
             
         borrarcarrito.onclick=()=>{
-        Productocarrito=[]
-        localStorage.clear();
-        console.log(Productocarrito);
-        window.location=("carrito.html")
+        Swal.fire({
+            title: 'desea eliminar el carrito?',
+            text: "no se puede revertir este paso!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'SI'
+          }).then((result) => {
+            if (result.isConfirmed) {
+                Productocarrito=[]
+                localStorage.clear();
+                console.log(Productocarrito);
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              ).then(()=>{
+                window.location=("carrito.html")
+              })
+              
+            }
+          })
+
+        
         }
         
  }
@@ -88,7 +111,7 @@ const form=document.getElementById("form")
  const formulario=`
         <form id="formulario">
         <p>Ingrese su nombre</p>
-            <input type="text" id="nombre" placeholder="ingrese tu nombre">
+            <input type="text" id="nombreu" placeholder="ingrese tu nombre">
             <br>
             <p>Ingrese su numero de telefono</p>
             <input type="number" id="telefono" placeholder="telefono">
@@ -104,15 +127,17 @@ const form=document.getElementById("form")
  
 function terminarcompra(){
     class personas{
-        constructor(nombre,telefono,direccion){
-            this.nombre=nombre;
+        constructor(nombreu,telefono,direccion){
+            this.nombreu=nombreu;
             this.telefono=telefono;
             this.direccion=direccion;
         }
     }
-    let nombre=document.getElementById("nombre")
+    let nombreu=document.getElementById("nombreu")
     let telefono=document.getElementById("telefono")
     let direccion=document.getElementById("direccion")
+    
+    let usuario=new personas(nombreu.value,telefono.value,direccion.value)
     
     if (!Productocarrito.length) 
         {
@@ -120,19 +145,43 @@ function terminarcompra(){
         }
         else
         {
-            if((nombre.value=null)&&(telefono.value=null)&&(direccion.value=null)) {
+            if((nombreu.value=null)||(telefono.value=null)||(direccion.value=null)) {
                 alert("faltan datos")
             }
             else
             {
-                
-                let usuario=new personas(nombre.value,telefono.value,direccion.value)
                 console.log(Productocarrito);
                 console.log(usuario);
-                alert("compra realizada con exito")
-                localStorage.clear();
-                Productocarrito=[]
-                window.location=("curso1.html")
+                const dia= moment().format('LLL')
+                
+                let venta=JSON.stringify(Productocarrito)+JSON.stringify(usuario)
+                
+                Swal.fire({
+                    title: 'Genera la compra de todo?',
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'SI'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                        
+                      Swal.fire(
+                        'Compra Exitosa!',
+                        'Vuelva cuando desee.',
+                        'success'
+                        
+                      ).then(()=>{
+                        alert(venta + dia)
+                        Productocarrito=[]
+                        localStorage.clear();
+                        console.log(Productocarrito);
+                        window.location=("carrito.html")
+                      })
+                    
+                    }
+                })
+
             }
         }
     

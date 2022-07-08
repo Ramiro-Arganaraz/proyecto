@@ -1,0 +1,191 @@
+{
+    "Require moment.js": {
+        "prefix": "moment.require",
+        "body": [
+            "const moment = require('moment');"
+        ],
+        "description": "Require moment.js"
+    },
+    "Moment format": {
+        "prefix": "moment.format",
+        "body": [
+            "moment().format(${1:})"
+        ],
+        "description": "Moment format"
+    },
+    "Moment formatConvert": {
+        "prefix": "moment.formatConvert",
+        "body": [
+            "moment(${1:'2012/02/22'}, ${2:'YYYY/MM/DD'}).format(${3:'Do MMM YYYY dddd'})"
+        ],
+        "description": "Convert date format to another format"
+    },
+    "moment format MMMM Do YYYY, h mm ss a": {
+        "prefix": "moment.format.MMMMDoYYYY,hmmssa",
+        "body": [
+            "moment().format('MMMM Do YYYY, h:mm:ss a')"
+        ],
+        "description": "Get format: February 22nd 2012, 12:00:00 am"
+    },
+    "moment format MMMM Do YYYY, dddd, h mm ss a": {
+        "prefix": "moment.format.MMMMDoYYYY,dddd,hmmssa",
+        "body": [
+            "moment().format('MMMM Do YYYY, dddd, h:mm:ss a')"
+        ],
+        "description": "Get format: February 22nd 2012, Wednesday, 12:00:00 am"
+    },
+    "moment format dddd": {
+        "prefix": "moment.format.dddd",
+        "body": [
+            "moment().format('dddd')"
+        ],
+        "description": "Get day name in locale set: Wednesday"
+    },
+    "moment format MMM Do YYYY": {
+        "prefix": "moment.format.MMMDoYYYY",
+        "body": [
+            "moment().format('MMM Do YYYY')"
+        ],
+        "description": "Get format: Feb 22nd 2012"
+    },
+    "moment format YYYY MMM Do": {
+        "prefix": "moment.format.YYYYMMMDo",
+        "body": [
+            "moment().format('YYYY MMM Do')"
+        ],
+        "description": "Get format: 2012 Feb 22nd"
+    },
+    "moment format YYYY/MM/DD": {
+        "prefix": "moment.format.YYYY/MM/DD",
+        "body": [
+            "moment().format('YYYY/MM/DD')"
+        ],
+        "description": "Get format: 2012/02/22"
+    },
+    "moment format YYYY MM DD": {
+        "prefix": "moment.format.YYYYMMDD",
+        "body": [
+            "moment().format('YYYY MM DD')"
+        ],
+        "description": "Get format: 2012 02 22"
+    },
+    "moment format YYYY MM DD dddd": {
+        "prefix": "moment.format.YYYYMMDDdddd",
+        "body": [
+            "moment().format('YYYY MM DD dddd')"
+        ],
+        "description": "Get format: 2012 02 22 Wednesday"
+    },
+    "moment format LT: Time (without seconds)": {
+        "prefix": "moment.format.LT",
+        "body": [
+            "moment().format('LT')"
+        ],
+        "description": "moment format LT, Time (without seconds): 12:00 AM"
+    },
+    "moment format LTS: Time (with seconds)": {
+        "prefix": "moment.format.LTS",
+        "body": [
+            "moment().format('LTS')"
+        ],
+        "description": "moment format LTS, Time (with seconds): 12:00:00 AM"
+    },
+    "moment format L: Date (in local format)": {
+        "prefix": "moment.format.L",
+        "body": [
+            "moment().format('L')"
+        ],
+        "description": "moment format L, Date (in local format): 02/22/2012"
+    },
+    "moment format l": {
+        "prefix": "moment.format.l",
+        "body": [
+            "moment().format('l')"
+        ],
+        "description": "moment format l"
+    },
+    "moment format LL: Month name, day of month, year": {
+        "prefix": "moment.format.LL",
+        "body": [
+            "moment().format('LL')"
+        ],
+        "description": "moment format LL, Month name, day of month, year: February 22, 2012"
+    },
+    "moment format ll": {
+        "prefix": "moment.format.ll",
+        "body": [
+            "moment().format('ll')"
+        ],
+        "description": "moment format ll"
+    },
+    "moment format LLL: Month name, day of month, year, time": {
+        "prefix": "moment.format.LLL",
+        "body": [
+            "moment().format('LLL')"
+        ],
+        "description": "moment format LLL: Month name, day of month, year, time: February 22, 2012 12:00 AM"
+    },
+    "moment format lll": {
+        "prefix": "moment.format.lll",
+        "body": [
+            "moment().format('lll')"
+        ],
+        "description": "moment format lll"
+    },
+    "moment format LLLL: Day of week, month name, day of month, year, time": {
+        "prefix": "moment.format.LLLL",
+        "body": [
+            "moment().format('LLLL')"
+        ],
+        "description": "moment format LLLL: Day of week, month name, day of month, year, time: Wednesday, February 22, 2012 12:00 AM"
+    },
+    "moment format llll": {
+        "prefix": "moment.format.llll",
+        "body": [
+            "moment().format('llll')"
+        ],
+        "description": "moment format llll"
+    },
+    "moment fromNow": {
+        "prefix": "moment.fromNow",
+        "body": [
+            "moment(${1:'20120222'}, ${2:'YYYYMMDD'}).fromNow()"
+        ],
+        "description": "moment from now"
+    },
+    "moment add calendar": {
+        "prefix": "moment.addCalendar",
+        "body": [
+            "moment().add(${1:10}, 'days').calendar()"
+        ],
+        "description": "moment add calendar"
+    },
+    "moment subtract calendar": {
+        "prefix": "moment.subtractCalendar",
+        "body": [
+            "moment().subtract(${1:10}, 'days').calendar()"
+        ],
+        "description": "moment subtract calendar"
+    },
+    "moment toArray": {
+        "prefix": "moment.toArray",
+        "body": [
+            "moment().toArray()"
+        ],
+        "description": "Returns an array that mirrors the parameters from new Date()"
+    },
+    "moment unix timestamp(milliseconds)": {
+        "prefix": "moment.valueOf",
+        "body": [
+            "moment().valueOf()"
+        ],
+        "description": "Returns the number of milliseconds since the Unix Epoch"
+    },
+    "moment unix timestamp(seconds)": {
+        "prefix": "moment.unix",
+        "body": [
+            "moment().unix()"
+        ],
+        "description": "Returns a Unix timestamp"
+    }
+}

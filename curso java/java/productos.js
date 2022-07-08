@@ -25,7 +25,7 @@ let producto=[
     cantidad:1
 }
 ]
-let Productocarrito;
+let Productocarrito=[]
 if(JSON.parse(localStorage.getItem('Productocarrito')))
 {
     Productocarrito=JSON.parse(localStorage.getItem('Productocarrito'))

@@ -27,24 +27,30 @@ mostrarProductos()
             const idBoton=boton.getAttribute("id")
             const productoencontrado=producto.find(prod=>prod.id==idBoton)
             const encarrito=Productocarrito.find(prod=>prod.id==productoencontrado.id)
+            Swal.fire('agregaste '+product.nombre +' al carrito')
             if(!encarrito)
-            {
-                Productocarrito.push({...productoencontrado, cantidad:1})
-            } 
+                {
+                    Productocarrito.push({...productoencontrado, cantidad:1})
+                } 
             else
-            {
-                let carritofiltrado= Productocarrito.filter(product=>product.id!=encarrito.id)
-                Productocarrito=[...carritofiltrado,{...encarrito,cantidad:encarrito.cantidad+1}]
-            }
+                {
+                    let carritofiltrado= Productocarrito.filter(product=>product.id!=encarrito.id)
+                    Productocarrito=[...carritofiltrado,{...encarrito,cantidad:encarrito.cantidad+1}]
+                }
             console.log(Productocarrito);
             localStorage.setItem('Productocarrito',JSON.stringify(Productocarrito))
             console.log(product);
-            })
+            
+            }
+            )
         });
-    }
 
-const contador=document.getElementById("carticon")
-contador.innerHTML=Productocarrito.lenght
+    }
+        // console.log(Productocarrito.lenght);
+            // const contador=document.getElementById("contador")
+            // contador.innerHTML=Productocarrito.lenght;
+    
+
 
 // vercarrito.onclick=()=>{
 //     window.location=("carrito.html")

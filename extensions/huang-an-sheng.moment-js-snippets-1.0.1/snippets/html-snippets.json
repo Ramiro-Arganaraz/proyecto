@@ -1,0 +1,373 @@
+{
+    "Moment.js CDN": {
+        "prefix": "moment-cdn",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js\"></script>"
+        ],
+        "description": "Moment.js CDN"
+    },
+    "Moment.js locale AF CDN": {
+        "prefix": "moment-locale-af",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js\"></script>"
+        ],
+        "description": "Moment.js locale AF CDN"
+    },
+    "Moment.js locale AR CDN": {
+        "prefix": "moment-locale-ar",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar.js\"></script>"
+        ],
+        "description": "Moment.js locale AR CDN"
+    },
+    "Moment.js locale AR-DZ CDN": {
+        "prefix": "moment-locale-ar-dz",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar-dz.js\"></script>"
+        ],
+        "description": "Moment.js locale AR-DZ CDN"
+    },
+    "Moment.js locale AR-KW CDN": {
+        "prefix": "moment-locale-ar-kw",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar-kw.js\"></script>"
+        ],
+        "description": "Moment.js locale AR-KW CDN"
+    },
+    "Moment.js locale AR-LY CDN": {
+        "prefix": "moment-locale-ar-ly",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar-ly.js\"></script>"
+        ],
+        "description": "Moment.js locale AR-LY CDN"
+    },
+    "Moment.js locale AR-MA CDN": {
+        "prefix": "moment-locale-ar-ma",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar-ma.js\"></script>"
+        ],
+        "description": "Moment.js locale AR-MA CDN"
+    },
+    "Moment.js locale AR-SA CDN": {
+        "prefix": "moment-locale-ar-sa",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar-sa.js\"></script>"
+        ],
+        "description": "Moment.js locale AR-SA CDN"
+    },
+    "Moment.js locale AR-TN CDN": {
+        "prefix": "moment-locale-ar-tn",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ar-tn.js\"></script>"
+        ],
+        "description": "Moment.js locale AR-TN CDN"
+    },
+    "Moment.js locale BE CDN": {
+        "prefix": "moment-locale-be",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/be.js\"></script>"
+        ],
+        "description": "Moment.js locale BE CDN"
+    },
+    "Moment.js locale BG CDN": {
+        "prefix": "moment-locale-bg",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/bg.js\"></script>"
+        ],
+        "description": "Moment.js locale BG CDN"
+    },
+    "Moment.js locale BN CDN": {
+        "prefix": "moment-locale-bn",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/bn.js\"></script>"
+        ],
+        "description": "Moment.js locale BN CDN"
+    },
+    "Moment.js locale CA CDN": {
+        "prefix": "moment-locale-ca",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ca.js\"></script>"
+        ],
+        "description": "Moment.js locale CA CDN"
+    },
+    "Moment.js locale CS CDN": {
+        "prefix": "moment-locale-cs",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/cs.js\"></script>"
+        ],
+        "description": "Moment.js locale CS CDN"
+    },
+    "Moment.js locale DA CDN": {
+        "prefix": "moment-locale-da",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/da.js\"></script>"
+        ],
+        "description": "Moment.js locale DA CDN"
+    },
+    "Moment.js locale DE-AT CDN": {
+        "prefix": "moment-locale-de-at",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/de-at.js\"></script>"
+        ],
+        "description": "Moment.js locale DE-AT CDN"
+    },
+    "Moment.js locale DE-CH CDN": {
+        "prefix": "moment-locale-de-ch",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/de-ch.js\"></script>"
+        ],
+        "description": "Moment.js locale DE-CH CDN"
+    },
+    "Moment.js locale DE CDN": {
+        "prefix": "moment-locale-de",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/de.js\"></script>"
+        ],
+        "description": "Moment.js locale DE CDN"
+    },
+    "Moment.js locale EL CDN": {
+        "prefix": "moment-locale-el",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/el.js\"></script>"
+        ],
+        "description": "Moment.js locale EL CDN"
+    },
+    "Moment.js locale EN-AU CDN": {
+        "prefix": "moment-locale-en-au",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-au.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-AU CDN"
+    },
+    "Moment.js locale EN-CA CDN": {
+        "prefix": "moment-locale-en-ca",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-ca.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-CA CDN"
+    },
+    "Moment.js locale EN-GB CDN": {
+        "prefix": "moment-locale-en-gb",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-gb.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-GB CDN"
+    },
+    "Moment.js locale EN-IE CDN": {
+        "prefix": "moment-locale-en-ie",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-ie.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-IE CDN"
+    },
+    "Moment.js locale EN-IL CDN": {
+        "prefix": "moment-locale-en-il",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-il.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-IL CDN"
+    },
+    "Moment.js locale EN-NZ CDN": {
+        "prefix": "moment-locale-en-nz",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-nz.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-NZ CDN"
+    },
+    "Moment.js locale EN-SG CDN": {
+        "prefix": "moment-locale-en-sg",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-SG.js\"></script>"
+        ],
+        "description": "Moment.js locale EN-SG CDN"
+    },
+    "Moment.js locale ES-US CDN": {
+        "prefix": "moment-locale-es-us",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es-us.js\"></script>"
+        ],
+        "description": "Moment.js locale ES-US CDN"
+    },
+    "Moment.js locale ES CDN": {
+        "prefix": "moment-locale-es",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js\"></script>"
+        ],
+        "description": "Moment.js locale ES CDN"
+    },
+    "Moment.js locale ET CDN": {
+        "prefix": "moment-locale-et",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/et.js\"></script>"
+        ],
+        "description": "Moment.js locale ET CDN"
+    },
+    "Moment.js locale FI CDN": {
+        "prefix": "moment-locale-fi",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fi.js\"></script>"
+        ],
+        "description": "Moment.js locale FI CDN"
+    },
+    "Moment.js locale FR-CA CDN": {
+        "prefix": "moment-locale-fr-ca",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr-ca.js\"></script>"
+        ],
+        "description": "Moment.js locale FR-CA CDN"
+    },
+    "Moment.js locale FR-CH CDN": {
+        "prefix": "moment-locale-fr-ch",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr-ch.js\"></script>"
+        ],
+        "description": "Moment.js locale FR-CH CDN"
+    },
+    "Moment.js locale FR CDN": {
+        "prefix": "moment-locale-fr",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr.js\"></script>"
+        ],
+        "description": "Moment.js locale FR CDN"
+    },
+    "Moment.js locale HE CDN": {
+        "prefix": "moment-locale-he",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/he.js\"></script>"
+        ],
+        "description": "Moment.js locale HE CDN"
+    },
+    "Moment.js locale HI CDN": {
+        "prefix": "moment-locale-hi",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/hi.js\"></script>"
+        ],
+        "description": "Moment.js locale HI CDN"
+    },
+    "Moment.js locale HU CDN": {
+        "prefix": "moment-locale-hu",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/hu.js\"></script>"
+        ],
+        "description": "Moment.js locale HU CDN"
+    },
+    "Moment.js locale ID CDN": {
+        "prefix": "moment-locale-id",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/id.js\"></script>"
+        ],
+        "description": "Moment.js locale ID CDN"
+    },
+    "Moment.js locale IS CDN": {
+        "prefix": "moment-locale-is",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/is.js\"></script>"
+        ],
+        "description": "Moment.js locale IS CDN"
+    },
+    "Moment.js locale IT-CH CDN": {
+        "prefix": "moment-locale-it-ch",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it-ch.js\"></script>"
+        ],
+        "description": "Moment.js locale IT-CH CDN"
+    },
+    "Moment.js locale IT CDN": {
+        "prefix": "moment-locale-it",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js\"></script>"
+        ],
+        "description": "Moment.js locale IT CDN"
+    },
+    "Moment.js locale JA CDN": {
+        "prefix": "moment-locale-ja",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ja.js\"></script>"
+        ],
+        "description": "Moment.js locale JA CDN"
+    },
+    "Moment.js locale KO CDN": {
+        "prefix": "moment-locale-ko",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ko.js\"></script>"
+        ],
+        "description": "Moment.js locale KO CDN"
+    },
+    "Moment.js locale NB CDN": {
+        "prefix": "moment-locale-nb",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/nb.js\"></script>"
+        ],
+        "description": "Moment.js locale NB CDN"
+    },
+    "Moment.js locale NL CDN": {
+        "prefix": "moment-locale-nl",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/nl.js\"></script>"
+        ],
+        "description": "Moment.js locale NL CDN"
+    },
+    "Moment.js locale PL CDN": {
+        "prefix": "moment-locale-pl",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/pl.js\"></script>"
+        ],
+        "description": "Moment.js locale PL CDN"
+    },
+    "Moment.js locale PT CDN": {
+        "prefix": "moment-locale-pt",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/pt.js\"></script>"
+        ],
+        "description": "Moment.js locale PT CDN"
+    },
+    "Moment.js locale RU CDN": {
+        "prefix": "moment-locale-ru",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ru.js\"></script>"
+        ],
+        "description": "Moment.js locale RU CDN"
+    },
+    "Moment.js locale SV CDN": {
+        "prefix": "moment-locale-sv",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/sv.js\"></script>"
+        ],
+        "description": "Moment.js locale SV CDN"
+    },
+    "Moment.js locale TH CDN": {
+        "prefix": "moment-locale-th",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/th.js\"></script>"
+        ],
+        "description": "Moment.js locale TH CDN"
+    },
+    "Moment.js locale TR CDN": {
+        "prefix": "moment-locale-tr",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/tr.js\"></script>"
+        ],
+        "description": "Moment.js locale TR CDN"
+    },
+    "Moment.js locale ZH-TW CDN": {
+        "prefix": "moment-locale-zh-tw",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/zh-tw.js\"></script>"
+        ],
+        "description": "Moment.js locale ZH-TW CDN"
+    },
+    "Moment.js locale ZH-HK CDN": {
+        "prefix": "moment-locale-zh-hk",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/zh-hk.js\"></script>"
+        ],
+        "description": "Moment.js locale ZH-HK CDN"
+    },
+    "Moment.js locale ZH-CN CDN": {
+        "prefix": "moment-locale-zh-cn",
+        "body": [
+            "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/zh-cn.js\"></script>"
+        ],
+        "description": "Moment.js locale ZH-CN CDN"
+    }
+}
