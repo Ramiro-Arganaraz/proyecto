@@ -69,16 +69,31 @@ Productocarrito.length===0 && console.log("carrito vacio");
         const {id,nombre,precio,cantidad}=element;
         const cart=`
         <tr scope="row" id=${id}>
-        <th></th>
+        <th><button onclick="borrarproducto(${id})" >borrar</th>
         <th>${nombre}</th>
         <th>${cantidad}</th>
         <th>$${(cantidad*precio).toLocaleString()}</th>
         </tr>
         `
         tbody.innerHTML+=cart;
+        
     });
-            
+    function buscarIdProducto(id)
+        {
+        const idBuscado = Productocarrito.find((idBuscado) => Number(idBuscado.id) === id);
+        return (resultadoBusqueda = idBuscado);
+        };
+    function borrarproducto(id)
+        {
+            const productoporeliminar=buscarIdProducto(id);
+            const indice=Productocarrito.indexOf(productoporeliminar);
+            Productocarrito.splice(indice, 1);
+            localStorage.setItem("Productocarrito",JSON.stringify(Productocarrito));
+            location.reload();
+        }
+
         borrarcarrito.onclick=()=>{
+            
         Swal.fire({
             title: 'desea eliminar el carrito?',
             text: "no se puede revertir este paso!",
@@ -172,7 +187,7 @@ function terminarcompra(){
                         'success'
                         
                       ).then(()=>{
-                        alert(venta + dia)
+                        console.log(venta + dia);
                         Productocarrito=[]
                         localStorage.clear();
                         console.log(Productocarrito);

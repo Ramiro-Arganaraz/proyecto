@@ -2,11 +2,20 @@ let cuota = 0
 let dto = 0
 let subtotal=0
 
-// let vercarrito=document.getElementById("vercarrito")
 let verTodo=document.getElementById("verTodo")
 
-mostrarProductos()    
-    function mostrarProductos() {
+const fetchLocalProductos=()=>{
+    fetch('/curso%20java/java/productos.json').then((response) => response.json())
+    .then((result)=>{
+        console.log(result);
+        mostrarProductos(result.producto)
+    }).catch((error)=>{
+        console.error(error);
+    })
+}
+fetchLocalProductos();
+
+    function mostrarProductos(producto) {
         producto.forEach((product) => {
             let card=document.createElement("div");
             card.setAttribute("class","hora")
@@ -44,14 +53,8 @@ mostrarProductos()
             }
             )
         });
-
+        const contador=document.getElementById("contador")
+        contador.innerHTML=Productocarrito.reduce((acc,prod)=>acc + prod.cantidad,0);
+        
     }
-        // console.log(Productocarrito.lenght);
-            // const contador=document.getElementById("contador")
-            // contador.innerHTML=Productocarrito.lenght;
-    
 
-
-// vercarrito.onclick=()=>{
-//     window.location=("carrito.html")
-// }
